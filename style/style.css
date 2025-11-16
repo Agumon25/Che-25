@@ -1,0 +1,898 @@
+html {
+  box-sizing: border-box;
+ 
+}
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    background:#fff8d1;
+    cursor: url(Putih.png), auto;
+    transition: background-color 2s, color 2s; /* Durasi transisi 2 detik */
+}
+
+.white-bg {
+    background-color: white; /* Background putih setelah klik */   
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    overflow: hidden;
+}
+
+.container div.six {
+    top: 10vh;
+    z-index: 1;
+}
+
+.container div.seven,
+.container div.eight,
+.container div.nine {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.container > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20vh;
+}
+
+.one {
+    font-size: 4.5rem;
+}
+
+.one > img {
+    vertical-align: middle;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.two {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.three {
+    font-size: 3rem;
+}
+
+.four .text-box {
+    width: 60%;
+    margin: 0 auto;
+    border: 3px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.text-box p {
+    margin: 0;
+    text-align: left;
+}
+
+.text-box span {
+    visibility: hidden;
+}
+
+.text-box .fake-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: #fff;
+    background-color: rgb(21, 161, 237);
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+.five p {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.idea-3 strong {
+    padding: 3px 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.five .idea-5 {
+    font-size: 4rem;
+}
+
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
+    display: inline-block;
+}
+
+.idea-6 span {
+    font-size: 15rem;
+}
+
+.six {
+    position: relative;
+}
+
+.six img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.six .hat {
+    position: absolute;
+    width: 80px;
+    top: -35px;
+    left: 41.5%;
+    /* transform: scale(0.1); */
+}
+
+.baloons img {
+    display: inline-block;
+    position: absolute;
+}
+
+.baloons img:nth-child(even) {
+    left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+    right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+    left: 30%;
+}
+
+.eight svg {
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+    top: 7vh;
+    left: 5vw;
+    fill: #bd6ecf;
+}
+
+.eight svg:nth-child(2) {
+    top: 23vh;
+    left: 35vw;
+    fill: #7dd175;
+}
+
+.eight svg:nth-child(3) {
+    top: 33vh;
+    left: 23vw;
+    fill: #349d8b;
+}
+
+.eight svg:nth-child(4) {
+    top: 43vh;
+    left: 57vw;
+    fill: #347a9d;
+}
+
+.eight svg:nth-child(5) {
+    top: 68vh;
+    left: 7vw;
+    fill: #c66053;
+}
+
+.eight svg:nth-child(6) {
+    top: 42vh;
+    left: 77vw;
+    fill: #bfaa40;
+}
+
+.eight svg:nth-child(7) {
+    top: 68vh;
+    left: 83vw;
+    fill: #e3bae8;
+}
+
+.eight svg:nth-child(8) {
+    top: 86vh;
+    left: 37vw;
+    fill: #8762cb;
+}
+
+.eight svg:nth-child(9) {
+    top: 94vh;
+    left: 87vw;
+    fill: #9a90da;
+}
+
+.wish-hbd {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.wish h5 {
+    font-weight: lighter;
+    font-size: 2rem;
+    margin: 10px 0 0;
+}
+
+#replay {
+    z-index: 3;
+    cursor: pointer;
+}
+
+@media screen and (max-height: 1000px) {
+    .six .hat {
+        left: 40%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .six .hat {
+        left: 37%;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .six .hat {
+        left: 32%;
+    }
+}
+
+@media screen and (max-height: 850px) and (max-width: 450px) {
+    .six .hat {
+        left: 32%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.text-box .fake-btn {
+    right: 5px;
+    bottom: -38px;
+}
+
+.idea-5 span {
+    display: block;
+}
+
+.idea-6 span {
+    font-size: 10rem;
+}
+
+.six .hat {
+    left: 47.5%;
+    width: 50px;
+    top: -20px;
+}
+
+.wish-hbd {
+    font-size: 2.2em;
+}
+
+.wish h5 {
+    font-size: 1.4rem;
+}
+
+.btnPlay {
+    cursor: url(Hitam.png), auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+} 
+
+.btnPlay.fade-out {
+    opacity: 0;
+}
+
+.pulse{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background:#b33719;
+    border-radius: 50%;
+}
+.pulse span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    background: inherit;
+    border-radius: inherit;
+    animation: pulseAnimate 2s ease-out infinite;
+    animation-delay: calc(0.8s * var(--i));
+    z-index: 1;
+}
+
+@keyframes pulseAnimate{
+    100%{
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+.image{
+    border-radius: 50%;
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 2; 
+    border: solid 2px white; 
+    object-fit: cover; 
+}
+  
+.beat {
+    width: 200px;
+    height: auto;
+    animation: beat 1.8s infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.more{
+    background-color: #3b5998; 
+    padding: 15px 40px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, transform 0.1s; 
+}
+
+:root {
+    --color: #111;
+    --primary: #FFAB9D;
+    --vanilla: #f0e4d0;
+    --chocolate: #241c0c;
+}
+
+.more-div{
+    /* display: flex; 
+    justify-content: center; 
+    align-items: center; */
+    z-index: 100;
+    right: 0;
+    margin-top: 50px;
+    pointer-events: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: Avenir, sans-serif;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+    overflow: hidden; 
+}
+
+
+.cta:hover {
+    cursor: url('../img/Hitam.png'), auto;
+}
+
+.cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--color);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover::before {
+    width: 100%;
+    background: rgba(255, 171, 157, 1);
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.96);
+}
+
+.nine {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.nine p {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.message {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100%; 
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.message p {
+    font-family: 'Signika', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 2px 2px 2px #FFF;
+    display: none;
+    font-weight: bold;
+    text-align: center; /* Agar teks berada di tengah */
+    margin: 20px 0; /* Spasi antar paragraf */
+}
+
+.cake {
+    position: absolute;
+    top: 70%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 300px;
+    z-index: 2;
+}
+
+.plate {
+    width: 270px;
+    height: 110px;
+    position: absolute;
+    bottom: 90px;
+    left: -10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    box-shadow: 
+        0 2px 0 darken(#ccc, 10%),
+        0 4px 0 darken(#ccc, 10%),
+        0 5px 40px rgba(0, 0, 0, 0.5);
+}
+
+.cake > * {
+    position: absolute;
+}
+
+.layer {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 110px;
+    border-radius: 45%;
+    background-color: var(--chocolate); /* Menggunakan variabel */
+    box-shadow: 
+        0 2px 0px rgba(255, 145, 0, 0.2),
+        0 4px 0px rgba(255, 174, 0, 0.3),
+        0 6px 0px rgba(255, 153, 0, 0.4),
+        0 8px 0px rgba(255, 136, 0, 0.5);
+}
+
+.layer-top { top: 0px; }
+.layer-middle { top: 33px; }
+.layer-bottom { top: 66px; }
+
+.icing {
+    top:-3px;
+    left: 1px;
+    background-color: var(--vanilla);
+    width: 250px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.drip {
+    display: block;
+    width: 50px;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: var(--vanilla);
+}
+
+.drip1 {
+    top: 53px;
+    left: 5px;
+    transform: skewY(15deg);
+    height: 48px;
+    width: 40px;
+}
+
+.drip2 {
+    top: 69px;
+    left: 181px;
+    transform: skewY(-15deg);
+}
+
+.drip3 {
+    top: 54px;
+    left: 90px;
+    width: 80px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.candle {
+    background-color: #7B020B;
+    width: 16px;
+    height: 50px;
+    border-radius: 8px;
+    top: -20px;
+    left: 50%;
+    margin-left: -8px;
+    z-index: 10;
+}
+
+.candle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: lighten(#7B020B, 10%);
+}
+
+.flame {
+    position: absolute;
+    background-color: orange;
+    width: 15px;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px / 25px 25px 10px 10px;
+    top: -34px;
+    left: 50%;
+    margin-left: -7.5px;
+    z-index: 10;
+    box-shadow:
+        0 0 10px rgba(255, 165, 0, 0.5),
+        0 0 20px rgba(255, 165, 0, 0.5),
+        0 0 60px rgba(255, 165, 0, 0.5),
+        0 0 80px rgba(255, 165, 0, 0.5);
+    transform-origin: 50% 90%;
+    animation: flicker 1s ease-in-out alternate infinite, fadeIn 1s forwards;
+}
+
+@keyframes flicker {
+    0% {
+        transform: skewX(5deg);
+        box-shadow: 
+            0 0 10px rgba(255, 165, 0, 0.2),
+            0 0 20px rgba(255, 165, 0, 0.2),
+            0 0 60px rgba(255, 165, 0, 0.2),
+            0 0 80px rgba(255, 165, 0, 0.2);
+    }
+    25% {
+        transform: skewX(-5deg);
+        box-shadow:
+            0 0 10px rgba(255, 165, 0, 0.5),
+            0 0 20px rgba(255, 165, 0, 0.5),
+            0 0 60px rgba(255, 165, 0, 0.5),
+            0 0 80px rgba(255, 165, 0, 0.5);
+    }
+    50% {
+        transform: skewX(10deg);
+        box-shadow:
+            0 0 10px rgba(255, 165, 0, 0.3),
+            0 0 20px rgba(255, 165, 0, 0.3),
+            0 0 60px rgba(255, 165, 0, 0.3),
+            0 0 80px rgba(255, 165, 0, 0.3);
+    }
+    75% {
+        transform: skewX(-10deg);
+        box-shadow:
+            0 0 10px rgba(255, 165, 0, 0.4),
+            0 0 20px rgba(255, 165, 0, 0.4),
+            0 0 60px rgba(255, 165, 0, 0.4),
+            0 0 80px rgba(255, 165, 0, 0.4);
+    }
+    100% {
+        transform: skewX(5deg);
+        box-shadow:
+            0 0 10px rgba(255, 165, 0, 0.5),
+            0 0 20px rgba(255, 165, 0, 0.5),
+            0 0 60px rgba(255, 165, 0, 0.5),
+            0 0 80px rgba(255, 165, 0, 0.5);
+    }
+}       
+
+    .content{
+        position: absolute;
+        width: 100%;
+        height: 100%; /* Pastikan konten mengambil tinggi penuh */
+        transition: transform 0.5s ease; /* Efek transisi */
+    }
+
+    .content1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Menempatkan konten di bagian atas */
+        align-items: center; /* Pusatkan konten secara horizontal */
+        background-color: #ffffff;
+        transform: translateX(100%);
+      /* Atau gunakan absolute/fixed sesuai kebutuhan */
+    }
+
+    /* Tombol panah */
+    .arrow {
+      position: absolute;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      cursor: url(Hitam.png), auto;
+      user-select: none;
+      display: inline-block;
+      transition: color 3s ease;
+      z-index: 2;
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Neon shadow */
+      animation: beat2 1s infinite; /* Efek beat selama 1 detik berulang */
+    }
+
+    .arrow::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(1);
+      border-radius: 3px;
+      border: 2px solid transparent;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    /* Tombol panah kanan */
+    .arrow-right {
+      right: 20px;
+      top: 47%;
+      transform: translateY(-50%);
+      display: none;
+    }
+
+    .arrow-right:hover::before {
+      transform: scale(1.2); /* Animasi efek neon */
+      border-color: #ffffff;
+      filter: drop-shadow(0 0 10px #ffffff);
+    }
+
+    /* Tombol panah kiri */
+    .arrow-left {
+      left: 20px;
+      top: 47%;
+      transform: translateY(-50%);
+      color: #000000;
+      display: none; /* Disembunyikan sampai halaman 2 muncul */
+    }
+
+    .arrow-left:hover::before {
+      transform: scale(1.2); /* Animasi efek neon */
+      border-color: #000000;
+      filter: drop-shadow(0 0 10px #000000);
+    }
+
+    @keyframes beat2 {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.4); /* Memperbesar skala */
+        }
+    }    
+    /* Gambar di sudut */
+    .corner-image {
+        position: absolute;
+        width: 150px; /* Ukuran gambar */
+        height: auto;
+    }
+
+    .top-left {
+        top: 0%;
+        left: 0%;
+        transform: rotate(90deg);
+    }
+  
+    .top-right {
+        top: 1.5%;
+        right: 1.5%;
+        transform: rotate(180deg);
+    }
+  
+    .bottom-left {
+        bottom: 1.5%;
+        left: 20%;
+    }
+  
+    .bottom-right {
+        bottom: 25%;
+        right: 15%;
+        transform: rotate(-90deg);
+    }
+  
+    .aaa {
+        top: 0%;
+        right: 30%;
+    }
+    .robin {
+        top: 40%;
+        left: 20%;
+    }
+  
+    .everet {
+        bottom: 1.5%;
+        left: 4%;
+    }
+  
+    .kuru-kuru {
+        bottom: 4%;
+        right: 21%;
+    }
+  
+    .gura {
+        bottom: 5%;
+        right: 2%;
+    }
+    .sleepycat {
+        bottom: 2%;
+        right: 40%;
+    }
+  
+    .hutao {
+        bottom: 40%;
+        right: 2%;
+    }
+  
+    .shigure {
+        top: 34%;
+        left: 0%;
+    }
+  
+    .xd {
+        bottom: 2%;
+        left: 18%;
+    }
+  
+    .long-cat {
+        bottom: 2%;
+        left: 42%;
+    }
+  
+    .zhongli {
+        top: 15%;
+        right: 25%;
+    }
+  
+    .dog {
+        top: 30%;
+        left: 40%;
+    }
+
+    .lucucing {
+        top: 5%;
+        left: 20%;
+    }
+
+    .burnice {
+        top: 8%;
+        left: 42%;
+    }
+    /* Teks di tengah */
+    .center-text {
+      position: absolute;
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .fade-in {
+        animation: fadeIn 1s forwards; /* Animasi fadeIn selama 1 detik */
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fade-out {
+        animation: fadeOut 1s forwards; /* Animasi fadeIn selama 1 detik */
+    }
+    
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
