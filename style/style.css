@@ -1,11 +1,12 @@
 html {
   box-sizing: border-box;
+  user-select: none;
  
 }
 
 body {
     margin: 0;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     background:#fff8d1;
     cursor: url(Putih.png), auto;
     transition: background-color 2s, color 2s; /* Durasi transisi 2 detik */
@@ -396,7 +397,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    font-family: Avenir, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .cta {
@@ -490,7 +491,7 @@ a {
 }
 
 .message p {
-    font-family: 'Signika', sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 30px;
     text-transform: uppercase;
     color: black;
