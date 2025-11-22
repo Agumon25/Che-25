@@ -29,6 +29,11 @@
       }
     })(window.location);
   </script>
+  <script>
+    if (/Mobi|Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)) {
+        window.location.href = "mobile-blocked.html";
+    }
+  </script>
 </head>
 <body>
   <div class="btnPlay">
