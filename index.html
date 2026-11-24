@@ -36,6 +36,11 @@
   </script>
 </head>
 <body>
+  <div class="Che2026btnplay" id="Che2026btnPlay">
+  <div class="Che2026"
+    onclick="window.location.href='https://drive.google.com/file/d/1I-ag8z3gvQnNLi_fnCP7zPey8saCIeBb/view?usp=sharing'">
+    Che day 2026
+  </div>
   <div class="btnPlay">
     <div class="pulse" id="btnPlay">
       <span style="--i:0;"></span>
@@ -43,6 +48,7 @@
       <img class="image beat" src="img/agung.jpg" alt="">
       <audio id="song" controls loop src="Liyue Harbor Daytime.mp3" hidden></audio>
     </div>
+  </div>
   </div>
   <audio id="audio1" src="seycarabass.mp3" hidden></audio>
   <audio id="audio2" src="seycara.mp3" hidden></audio>
@@ -81,7 +87,7 @@
       </p>
     </div>
     <div class="six">
-      <img src="img/c.jpeg" width="300" height="300" alt="" class="lydia-dp" draggable="false">
+      <img src="img/c2.jpeg" width="300" height="300" alt="" class="lydia-dp" draggable="false">
       <img src="img/hat.svg" alt="" class="hat">
       <div class="wish">
         <h3 class="wish-hbd" >Happy Birthday!</h3>
@@ -492,10 +498,11 @@ const animationTimeline = () => {
 };
   const flame = document.querySelector('.flame');
   const cake = document.getElementsByClassName('cake')[0];
+  const Che2026btnPlay = document.getElementById('Che2026btnPlay');
   const btnPlay = document.getElementById('btnPlay');
   const song = document.getElementById('song');
   
-  btnPlay.addEventListener('click', function() {
+  Che2026btnPlay.addEventListener('click', function() {
     
     cake.style.display = 'none';
     let opacity = 1; // Start with full opacity
@@ -508,11 +515,11 @@ const animationTimeline = () => {
       opacity -= decrement; // Decrease opacity
       if (opacity <= 0) {
         opacity = 0; // Ensure it doesn't go below 0
-        btnPlay.style.display = 'none'; // Hide the button when done
+        Che2026btnPlay.style.display = 'none'; // Hide the button when done
         setTimeout(animationTimeline, 2000);
         song.play();
       }
-      btnPlay.style.opacity = opacity; // Apply the new opacity
+      Che2026btnPlay.style.opacity = opacity; // Apply the new opacity
       if (opacity > 0) {
         requestAnimationFrame(fadeOut); // Continue fading
       }
